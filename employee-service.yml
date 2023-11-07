@@ -17,7 +17,7 @@ spring:
     hibernate:
       ddl-auto: update
   boot:
-    message: Welcome, Employee Service
+    message: Welcome, Employee Service Spring Cloud Bus
 
 eureka:
   client:
