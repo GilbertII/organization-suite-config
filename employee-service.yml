@@ -16,6 +16,8 @@ spring:
         format_sql: true
     hibernate:
       ddl-auto: update
+  boot:
+    message: Welcome, Employee Service
 
 eureka:
   client:
