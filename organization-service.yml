@@ -1,0 +1,27 @@
+server:
+  port: 8290
+
+spring:
+  application:
+    name: organization-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/organization_db
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+  boot:
+    message: Welcome, Organization Sevice Spring Cloud Bus
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/
